@@ -4,8 +4,8 @@ Channel fees are examined and adjusted individually, periodically. For each chan
 
 * When local balance is high, set fees lower.
 * When remote balance is high, set fees higher.
-* When the number of transactions per minute is low, set fees lower.
-* When the number of transactions per minute is high, set fees higher.
+* When the number of outgoing transactions per minute is low, set fees lower.
+* When the number of outgoing transactions per minute is high, set fees higher.
 
 As the system adjusts, it will attempt to find "the sweet spot" between maximizing for high transactions and high fees.
 
