@@ -1,6 +1,6 @@
 # Auto Fee Optimizer
 
-This is an automatic fee optimizer for lnd. It's meant to be minimal in configuration, as it will attempt to discover the best fees for each channel based on historical flow and balance.
+This is an automatic fee optimizer for lnd. It's meant to be minimal in configuration, as it will attempt to discover the best fees for each channel based on historical flow and balance. See [how-it-works.md](how-it-works.md). 
 
 # Install, setup, and run
 
