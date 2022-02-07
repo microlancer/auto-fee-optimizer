@@ -4,6 +4,8 @@ This is an automatic fee optimizer for lnd. It's meant to be minimal in configur
 
 # Install, setup, and run
 
+Prerequisites are `php`, `composer`, and `lnd`.
+
 ```
 $ git clone https://github.com/thorie7912/auto-fee-optimizer
 $ cd auto-fee-optimizer
@@ -18,7 +20,7 @@ $ ./optimized &
 $ tail -f debug.log
 ```
 
-The optimizer runs in the background. You can interact with it using `optimize-cli` which will give you options to view or alter it's behavior. You can use tools such as supervisord to make it a process that always runs in the background on your system if you prefer.
+The optimizerd runs continuously. It will collect data about each channel's performance and adjust the fees for your channels accordingly. It will not send out updates more than every `UPDATE_TTL_SECONDS` as defined in the config file per channel. You can interact with the running daemon using `optimize-cli` which will give you options to view or alter it's behavior. You can use tools such as supervisord to make the daemon a process that always runs in the background on your system (as an actual daemon) if you prefer.
 
 The optimizer will not make any fee changes automatically if you set the `auto` to `false`. It will put all changes in a queue for you to manually accept or reject via the `optimize-cli` tool. This is primarily useful for debugging or testing the app.
 
