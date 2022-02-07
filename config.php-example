@@ -3,9 +3,20 @@
 namespace AFO;
 
 class Config {
+
+  // LND certificate
 	const CERT_PATH = '/root/.lnd/tls.cert';
+
+	// Macaroon (only needs permission to update fees)
 	const MACAROON_PATH = '/root/.lnd/data/chain/bitcoin/mainnet/admin.macaroon';
+
+  // LND RPC host and port
 	const HOST = '127.0.0.1:10009';
-  const AUTO = true; // if false, use cli to approve fee changes
-  const UPDATE_TTL_SECONDS = 600; // minimum fee update frequency
+
+  // Auto-update flag. If false, use cli to approve fee each change.
+  const AUTO = true; 
+
+	// Time between broadcasting fee updates (to prevent spamming)
+  const UPDATE_TTL_SECONDS = 600;
+
 }
