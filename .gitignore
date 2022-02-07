@@ -1,0 +1,6 @@
+debug.log
+config.php
+data.db
+vendor
+composer.phar
+composer.lock

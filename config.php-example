@@ -1,0 +1,11 @@
+<?php
+
+namespace AFO;
+
+class Config {
+	const CERT_PATH = '/root/.lnd/tls.cert';
+	const MACAROON_PATH = '/root/.lnd/data/chain/bitcoin/mainnet/admin.macaroon';
+	const HOST = '127.0.0.1:10009';
+  const AUTO = true; // if false, use cli to approve fee changes
+  const UPDATE_TTL_SECONDS = 600; // minimum fee update frequency
+}

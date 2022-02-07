@@ -1,0 +1,10 @@
+#!/usr/bin/php
+<?php
+
+include 'config.php';
+include 'libs/Optimizer.php';
+
+$optimizer = new AFO\Optimizer();
+$optimizer->runCli();
+
+?>
