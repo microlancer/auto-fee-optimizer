@@ -1,5 +1,7 @@
 # How it works
 
+Channel fees are examined and adjusted individually, periodically. For each channel:
+
 * When local balance is high, set fees lower.
 * When remote balance is high, set fees higher.
 * When the number of transactions per minute is low, set fees lower.
